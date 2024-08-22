@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::after,
+::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, input, button{
+  font-family: "Poppins", sans-serif;
+}
+
+#login-section{
+  width: 100%;
+  height: 100vh;
+}
+
+.logo-header{
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 10px;
+}
+
+.logo-heading-text{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.logo-heading-text span{
+  font-size: 0.5rem;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.signup-details-secton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.signup-form{
+  width: 90%;
+}
+.welcome-back-heading{
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.welcome-back-heading-info{
+  font-size: 0.85rem;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.google-sigin-data-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #929292;
+  padding: 8px 0;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.google-sigin-data-box p{
+  font-size: 0.8rem;
+}
+
+.google-sigin-data-box:hover{
+  background-color: black;
+  color: #fff;
+}
+
+.line-through-or{
+  width: 100%;
+  background-color: #a0a0a07a;
+  height: 1px;
+}
+
+.or-box-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.or-box-details p{
+  color: #9e9c9c;
+  font-size: 0.9rem;
+}
+
+.email-label, .password-label{
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+#email-input, #password-input{
+  padding: 7px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #666666;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+#password-input{
+  background-color: #cccccc;
+}
+.checkbox-forget-detials{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.checkbox-input{
+  font-size: 0.9rem;
+}
+
+.forgot-password{
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.login-btn{
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.login-btn:hover{
+  background-color: #666666;
+  color: #000;
+}
+
+.account-links-details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-links-details p{
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+.account-links-details p a{
+  color: #000;
+}
+
+.inside-login-image .image-details-section{
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  #login-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-image-side-bar{
+    background: 
+    linear-gradient(to top , #1f1f1fde, #b1b1b100),
+    url(images/janko-ferlic-ZzVMNgg23pk-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .welcome-back-heading{
+    font-size: 1.5rem;
+  }
+
+  .inside-login-image{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+  } 
+
+  .inside-login-image .image-details-section{
+    display: block;
+    width: 90%;
+    margin-bottom: 20PX;
+  }
+
+  .image-details-section h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .profile-name-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile-name-details p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .profile-name-details span{
+    color: #fff;
+  }
+
+  .founder-title{
+    color: #fff;
+    font-size: 0.6rem;
+  }
+
+  .work-title{
+    color: #fff;
+    font-size: 0.5rem;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .signup-form{
+    width: 70%;
+  }
+}
